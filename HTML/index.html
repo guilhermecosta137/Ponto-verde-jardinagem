@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponto Verde Jardinagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="circulo-verde"></div>
+            <span>Ponto Verde Jardinagem</span>
+        </div>
+    </header>
+
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h2 class="apresentacao__conteudo__titulo">
+                Eleve seu jardim a outro nível 
+                <strong class="titulo-destaque">com a Ponto Verde Jardinagem!</strong>
+            </h2>
+
+            <p class="apresentacao__conteudo__texto">
+                Somos a Ponto Verde Jardinagem. Desde 1972, entregamos trabalhos impecáveis.
+                Há 4 anos inauguramos nosso horto, que se tornou um grande sucesso.
+                Oferecemos serviços de jardinagem e plantas de extrema qualidade, temos gramas de todos os tipos, plantas ornamentais, árvores frutíferas e muito mais.
+                Nossa equipe é formada por profissionais experientes e apaixonados por jardinagem, prontos para transformar seu espaço verde em um verdadeiro paraíso.
+                Se você procura qualidade, dedicação e um toque especial para o seu jardim, a Ponto Verde Jardinagem é a escolha certa.
+                Entre em contato conosco e descubra como podemos tornar seu sonho verde realidade, adoraremos em recebe-los em nosso horto, pra compras de plantas entre em contato conosco, enviamos pra todo brasil!
+            </p>
+
+            <div class="apresentacao__links">
+            </div>
+        </section>
+
+    </main>
+
+    <section class="trabalhos">
+        <h2 class="apresentacao__conteudo__titulo">Trabalhos Feitos</h2>
+        <div class="galeria">
+            <img src="foto pedras brancas.jpeg"Projeto com piscina e vegetação">
+            <img src="piscina grande.jpeg" alt="Projeto de varanda com plantas">
+            <img src="parede de plantas.jpeg" alt="Parede vertical com samambaias">
+            <img src="piscina plantas.jpeg" alt="">
+        </div>
+        <section class="plantas">
+            <h2 class="apresentacao__conteudo__titulo">Alguns exemplos de plantas</h2>
+            <div class="galeria">
+                <img src="png1.jpeg" alt="Samambaia">
+                <img src="png2.jpeg" alt="Cacto">
+                <img src="png3.jpeg" alt="Suculenta">
+                <img src="png4.jpeg" alt="Orquídea">
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ponto Verde Jardinagem - Todos os direitos reservados</p>
+        <p>Siga-nos no Instagram</p>
+        <p class="hortopontoverdejardinagem">@hortopontoverdejardinagem</p>
+        <p>Rua Acasio Alves Alvin, 1835 - Marilandia, Juiz De Fora MG</p>
+       
+
+        <!-- Botão WhatsApp -->
+        <a href="https://wa.me/553284215665" 
+           target="_blank" 
+           class="btn-whatsapp">
+           💬 Fale conosco no WhatsApp
+        </a>
+    </footer>
+    <script>
+        // Animação para aparecer imagens ao rolar
+        const imagens = document.querySelectorAll('.galeria img');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('aparecer');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        imagens.forEach(img => observer.observe(img));
+    </script>
+</body>
+
+</html>
